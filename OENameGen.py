@@ -2,6 +2,15 @@ import random
 
 
 def GetName(strGender):
+    """
+    Returns a random Anglo-Saxon name as a string
+
+    Parameters:
+    strGender (str): Gender of the name to be generated ("M" or "F")
+
+    Returns:
+    name1 + name2F | name1 + name2F (str): Random male or female name as a string
+    """
     name1List = [
         "Ælf",
         "Æsc",
@@ -114,6 +123,7 @@ def GetName(strGender):
         singleSyllable = random.randint(0, 10)
         name1 = name1List[random.randint(0, len(name1List) - 1)]
         if singleSyllable == 0:
+            # 1/10 chance of monothemetic male name
             name2M = ""
         else:
             name2M = name2ListMale[random.randint(0, len(name2ListMale) - 1)]
