@@ -1,7 +1,18 @@
 import random
 
 
-def GetPlaceName():
+def GetPlaceName() -> str:
+    """
+    Returns a random Anglo-Saxon place name as a string
+
+    Parameters:
+    None
+
+    Returns:
+    pName1[random.randint(0, len(pName1) - 1)]
+        + pName2[random.randint(0, len(pName2) - 1)] (str):
+    Random place name as a string
+    """
     pName1 = [
         "Anne",
         "Ansetl",
